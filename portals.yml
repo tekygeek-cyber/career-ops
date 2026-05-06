@@ -1,0 +1,332 @@
+# Portal Scanner Configuration — Pranesh Nallamuthu
+# Scope: EU-wide | OEM + Tier-1 Automotive/Industrial | Materials Compliance roles
+# Last updated: 2026-05-06
+# To restart scan: run `node scan.mjs` or equivalent scan command
+
+title_filter:
+  positive:
+    - materials compliance
+    - material compliance
+    - REACH
+    - RoHS
+    - ELV
+    - IMDS
+    - substance compliance
+    - product compliance
+    - regulatory compliance
+    - environmental compliance
+    - chemical compliance
+    - product stewardship
+    - sustainability compliance
+    - hazardous substance
+    - restricted substances
+  negative:
+    - senior manager
+    - director
+    - VP
+    - head of
+    - intern
+    - apprentice
+    - Praktikant
+    - Werkstudent
+    - student
+
+location_filter:
+  countries:
+    - DE  # Germany
+    - NL  # Netherlands
+    - BE  # Belgium
+    - AT  # Austria
+    - SE  # Sweden
+    - DK  # Denmark
+    - FR  # France
+    - CZ  # Czech Republic
+    - PL  # Poland
+    - HU  # Hungary
+    - SK  # Slovakia
+    - SI  # Slovenia
+    - FI  # Finland
+    - IT  # Italy
+    - ES  # Spain
+  remote: true
+
+# ─── JOB PORTALS (general + LinkedIn) ────────────────────────────────────────
+portals:
+  - name: LinkedIn Jobs
+    type: linkedin
+    search_url: "https://www.linkedin.com/jobs/search/?keywords=materials+compliance+REACH+RoHS&location=Europe&f_WT=1%2C2%2C3&sortBy=DD"
+    note: Search LinkedIn with keywords REACH RoHS materials compliance, all EU, sort by date
+
+  - name: XING Jobs
+    type: websearch
+    search_url: "https://www.xing.com/jobs/search?keywords=materials+compliance+REACH&location=Europa"
+    note: XING — strong in DACH region
+
+  - name: StepStone DE
+    type: websearch
+    search_url: "https://www.stepstone.de/jobs/materials-compliance"
+    note: Major German job board
+
+  - name: Indeed EU
+    type: websearch
+    search_url: "https://de.indeed.com/jobs?q=materials+compliance+REACH+RoHS&l=Deutschland"
+    note: Indeed Germany
+
+  - name: EuroEngineerJobs
+    type: websearch
+    search_url: "https://www.eurengineersjobs.com/jobs/?keywords=compliance+REACH"
+    note: Engineering-focused EU jobs
+
+# ─── OEM — Tier-0 Automotive ──────────────────────────────────────────────────
+tracked_companies:
+
+  # Germany OEM
+  - name: BMW Group
+    careers_url: https://www.bmwgroup.jobs/de/en/positions.html
+    country: DE
+    tier: OEM
+
+  - name: Mercedes-Benz
+    careers_url: https://www.mercedes-benz.com/en/career/job-search/
+    country: DE
+    tier: OEM
+
+  - name: Volkswagen Group
+    careers_url: https://www.volkswagenag.com/en/careers/job-search.html
+    country: DE
+    tier: OEM
+
+  - name: Audi
+    careers_url: https://www.audi.com/en/career/job-offers.html
+    country: DE
+    tier: OEM
+
+  - name: Porsche
+    careers_url: https://www.porsche.com/germany/aboutporsche/jobs/
+    country: DE
+    tier: OEM
+
+  - name: Stellantis
+    careers_url: https://www.stellantis.com/en/careers
+    country: DE
+    tier: OEM
+
+  - name: Continental AG
+    careers_url: https://www.continental.com/en/career/jobs/
+    country: DE
+    tier: OEM
+
+  # Netherlands / Belgium
+  - name: DAF Trucks (PACCAR)
+    careers_url: https://www.daf.com/en/about-daf/vacancies
+    country: NL
+    tier: OEM
+
+  - name: Volvo Cars
+    careers_url: https://www.volvocars.com/intl/v/car-culture/innovation/jobs
+    country: SE
+    tier: OEM
+
+  - name: Volvo Group
+    careers_url: https://www.volvogroup.com/en/careers/job-opportunities.html
+    country: SE
+    tier: OEM
+
+  - name: Scania
+    careers_url: https://www.scania.com/group/en/home/career/job-opportunities.html
+    country: SE
+    tier: OEM
+
+  - name: Renault Group
+    careers_url: https://www.renaultgroup.com/en/talent/job-offers/
+    country: FR
+    tier: OEM
+
+  - name: Stellantis (PSA/Opel)
+    careers_url: https://www.stellantis.com/en/careers/search-jobs
+    country: FR
+    tier: OEM
+
+  - name: Skoda Auto
+    careers_url: https://www.skoda-auto.com/en/careers
+    country: CZ
+    tier: OEM
+
+# ─── TIER 1 SUPPLIERS ─────────────────────────────────────────────────────────
+
+  - name: Bosch
+    careers_url: https://www.bosch.com/careers/find-a-job/
+    country: DE
+    tier: T1
+
+  - name: ZF Friedrichshafen
+    careers_url: https://jobs.zf.com/go/ZF-Group-Careers/3591501/
+    country: DE
+    tier: T1
+
+  - name: Schaeffler
+    careers_url: https://www.schaeffler.com/en/career/job-offers/
+    country: DE
+    tier: T1
+
+  - name: Infineon Technologies
+    careers_url: https://www.infineon.com/cms/en/careers/
+    country: DE
+    tier: T1
+
+  - name: TE Connectivity
+    careers_url: https://www.te.com/usa-en/about-te/careers.html
+    country: DE
+    tier: T1
+
+  - name: Aptiv
+    careers_url: https://www.aptiv.com/en/careers
+    country: DE
+    tier: T1
+
+  - name: Valeo
+    careers_url: https://jobs.valeo.com/en/jobs/search/
+    country: FR
+    tier: T1
+
+  - name: Faurecia (FORVIA)
+    careers_url: https://www.forvia.com/en/careers/job-search
+    country: FR
+    tier: T1
+
+  - name: Plastic Omnium
+    careers_url: https://www.plasticomnium.com/en/careers/
+    country: FR
+    tier: T1
+
+  - name: Solvay
+    careers_url: https://www.solvay.com/en/careers
+    country: BE
+    tier: T1
+
+  - name: Umicore
+    careers_url: https://www.umicore.com/en/careers/jobs/
+    country: BE
+    tier: T1
+
+  - name: Sensata Technologies
+    careers_url: https://www.sensata.com/careers
+    country: NL
+    tier: T1
+
+  - name: NXP Semiconductors
+    careers_url: https://www.nxp.com/company/careers:CAREERS
+    country: NL
+    tier: T1
+
+  - name: Philips
+    careers_url: https://www.philips.com/a-w/about/jobs.html
+    country: NL
+    tier: T1
+
+  - name: SKF
+    careers_url: https://www.skf.com/group/careers
+    country: SE
+    tier: T1
+
+  - name: Sandvik
+    careers_url: https://www.home.sandvik/en/careers/
+    country: SE
+    tier: T1
+
+  - name: ABB
+    careers_url: https://new.abb.com/careers
+    country: SE
+    tier: T1
+
+  - name: Siemens
+    careers_url: https://jobs.siemens.com/careers
+    country: DE
+    tier: T1
+
+  - name: Osram
+    careers_url: https://jobs.osram.com/
+    country: DE
+    tier: T1
+
+  - name: Sennheiser
+    careers_url: https://jobs.sennheiser.com/
+    country: DE
+    tier: T1
+    note: Already applied — job 729 on 2026-05-06
+
+  - name: Methode Electronics
+    careers_url: https://www.methode.com/careers/
+    country: DE
+    tier: T1
+    note: Previous employer — use with care
+
+  - name: Hella (FORVIA Hella)
+    careers_url: https://www.hella.com/hella-com/en_GB/careers.html
+    country: DE
+    tier: T1
+
+  - name: Brose
+    careers_url: https://www.brose.com/de-en/career.html
+    country: DE
+    tier: T1
+
+  - name: Webasto
+    careers_url: https://www.webasto-group.com/en/career/
+    country: DE
+    tier: T1
+
+  - name: Magna International
+    careers_url: https://www.magna.com/company/careers
+    country: AT
+    tier: T1
+
+  - name: AVL List GmbH
+    careers_url: https://www.avl.com/en/careers
+    country: AT
+    tier: T1
+
+  - name: AT&S
+    careers_url: https://www.ats.net/career/
+    country: AT
+    tier: T1
+
+  - name: Hella Sonplas
+    careers_url: https://www.hella.com/hella-com/en_GB/careers.html
+    country: DE
+    tier: T1
+
+  - name: Vitesco Technologies
+    careers_url: https://vitesco-technologies.com/en-us/career
+    country: DE
+    tier: T1
+
+  - name: Plastic Omnium
+    careers_url: https://www.plasticomnium.com/en/careers/
+    country: PL
+    tier: T1
+
+  - name: Delphi Technologies (BorgWarner)
+    careers_url: https://www.borgwarner.com/careers
+    country: PL
+    tier: T1
+
+  - name: Leoni AG
+    careers_url: https://www.leoni.com/en/career/
+    country: DE
+    tier: T1
+
+  - name: Wuerth Elektronik
+    careers_url: https://www.we-online.com/de/ueber-uns/karriere
+    country: DE
+    tier: T1
+
+# ─── SCAN STATE ───────────────────────────────────────────────────────────────
+scan_state:
+  last_run: null
+  last_completed_company: null
+  total_companies: 45
+  status: ready
+  note: |
+    To resume scan from last_completed_company, run scan and it will skip
+    companies already processed. Set status to 'running' when active.

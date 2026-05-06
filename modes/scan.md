@@ -238,3 +238,77 @@ Fallback: si solo tienes la URL ATS directa, navega primero al sitio web de la e
 - Ajustar keywords de filtrado según evolucionen los roles target
 - Añadir empresas a `tracked_companies` cuando interese seguirlas de cerca
 - Verificar `careers_url` periódicamente — las empresas cambian de plataforma ATS
+
+---
+
+## Configuración de búsqueda EU-wide (actualizado 2026-05-06)
+
+### Alcance geográfico
+Buscar en TODOS los estados de la UE, priorizando:
+- **DACH**: Alemania, Austria, Suiza
+- **Benelux**: Países Bajos, Bélgica
+- **Nordics**: Suecia, Dinamarca, Finlandia
+- **Eastern EU**: Rep. Checa, Polonia, Hungría, Eslovaquia
+- **Southern EU**: Francia, Italia, España
+- **Remote**: incluir roles completamente remotos en la UE
+
+### Tipos de empresa objetivo
+1. **OEM** (Tier-0): BMW, Mercedes, VW, Audi, Volvo, Renault, Skoda, Stellantis
+2. **Tier-1 Automotriz**: Bosch, ZF, Schaeffler, Continental, Aptiv, Valeo, Faurecia, Magna, Hella, Vitesco
+3. **Electrónica/Semiconductores**: Infineon, NXP, TE Connectivity, Siemens, ABB, Osram
+4. **Industriales**: Umicore, Solvay, SKF, Sandvik, AT&S
+5. **Consumer Electronics**: Sennheiser, Philips y similares
+
+### Nivel salarial objetivo
+- Rango: €50,000–€75,000 bruto anual (Alemania benchmark)
+- Equivalente según país (NL/SE/BE suelen ser +10–15%)
+- Priorizar empresas con EU Blue Card sponsorship
+
+### Nivel 0 — LinkedIn & Job Portals (NUEVO)
+
+**ANTES de escanear careers individuales**, ejecutar búsqueda en portales:
+
+1. **LinkedIn Jobs**
+   - URL: https://www.linkedin.com/jobs/search/?keywords=materials+compliance+REACH+RoHS&location=Europe&f_WT=1%2C2%2C3&sortBy=DD
+   - Filtros: Date posted = last week, All EU, All levels except Director
+   - Extraer: Título, empresa, ubicación, URL, fecha
+   - Guardar nuevos en `reports/scan-linkedin-YYYY-MM-DD.md`
+
+2. **XING** (DACH focus)
+   - URL: https://www.xing.com/jobs/search?keywords=materials+compliance+REACH
+   - Extraer igual que LinkedIn
+
+3. **StepStone DE**
+   - URL: https://www.stepstone.de/jobs/materials-compliance
+   - Extraer igual
+
+4. **Indeed DE**
+   - URL: https://de.indeed.com/jobs?q=materials+compliance+REACH+RoHS
+   - Extraer igual
+
+Despues de portales, continuar con `tracked_companies` en `portals.yml`.
+
+### Formato de reporte de scan
+Guardar resultados en `reports/scan-YYYY-MM-DD.md` con estructura:
+
+```markdown
+# Scan Report — YYYY-MM-DD
+
+## LinkedIn / Portals
+| Empresa | Título | País | URL | Prioridad |
+|---------|--------|-------|-----|----------|
+
+## Tracked Companies
+| Empresa | Título | País | URL | Prioridad |
+|---------|--------|-------|-----|----------|
+
+## Resumen
+- Total encontrados: X
+- Alta prioridad (aplicar esta semana): X
+- Ya aplicados: Sennheiser (729, 2026-05-06)
+```
+
+### Estado del último scan
+- Último scan: ninguno (primer scan completo pendiente)
+- Próximo paso: ejecutar scan completo con `portals.yml` configurado
+- LinkedIn: pendiente (requiere login — pedir al usuario que inicie sesión en LinkedIn antes del scan)
