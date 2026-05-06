@@ -2,7 +2,7 @@
 **Materials Compliance Engineer | IMDS Specialist | Mechanical Engineer**
 30 Sardinella, Triq in Nadur, Marsaskala MSK 3716, Malta | +356 99353934 | prannalla@gmail.com
 LinkedIn: linkedin.com/in/pranesh-nallamuthu-1b55a255
-Open to relocation across EU (Germany, Netherlands, Belgium, Austria, Sweden, Denmark, France, Czech Republic, Poland, Hungary)
+EU Work Permit Holder | Open to relocation across EU (Germany, Netherlands, Belgium, Austria, Sweden, Denmark, France, Czech Republic, Poland, Hungary)
 
 ---
 
