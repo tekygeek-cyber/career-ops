@@ -64,7 +64,7 @@ _Degree anabin-verified as equivalent to EU Bachelor (4 years)_
 
 - **IMDS Advanced Certification** — Official Exclusive Training
   IMDS Basics (Course 6120) | IMDS Advanced (Course 6121) | IMDS Release 14 (Course 6125)
-  _DXC Technology / IMDS Steering Committee_ | February 2023
+  _IMDS Professional (official DXC Technology partner)_ | February 2023
 
 - **Exclusive Material Compliance Training**
   _Methode Electronics_ | September 2024
