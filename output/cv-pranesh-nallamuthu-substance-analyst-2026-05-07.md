@@ -8,7 +8,7 @@ EU Work Permit Holder | Available for 100% Remote Engagement | Available from: S
 
 ## Professional Summary
 
-Dedicated IMDS & Materials Compliance Specialist with 5+ years of hands-on experience managing material data submissions, supplier compliance workflows, and regulatory reporting across the automotive supply chain. Certified in IMDS Advanced (Basics 6120, Advanced 6121, Release 14 6125) and trained in REACH, RoHS, ELV, SCIP, and GADSL. Proven ability to validate BOM-level material data, perform Where Used Analysis, resolve IMDS rejections, and coordinate with global Tier 1 and OEM clients including Ferrari, VW Group, and PACCAR. Experienced in consulting and training roles — capable of guiding clients and suppliers through complex IMDS submissions and regulatory requirements. Fluent in English. Fully remote-ready.
+IMDS Engineer and Materials Compliance Specialist with 3+ years of hands-on experience in automotive material data submissions, supplier compliance workflows, and regulatory reporting. Currently at Methode Electronics as IMDS Engineer (since August 2023), with additional independent IMDS consulting for a confidential Tier 1 automotive supplier in Malta. Certified in IMDS Advanced (Basics 6120, Advanced 6121, Release 14 6125) through IMDS Professional (official DXC Technology partner). Deep practical knowledge of REACH, RoHS, ELV, SCIP, and GADSL. Fluent in English. Fully remote-ready with EU work permit.
 
 ---
 
@@ -16,7 +16,7 @@ Dedicated IMDS & Materials Compliance Specialist with 5+ years of hands-on exper
 
 - **IMDS:** Material data submission & validation | Where Used Analysis | BOM-to-IMDS mapping | MDS creation & review | IMDS A2 Optimizer | Release 14 (IMDS 6125) | CDX familiarity
 - **Regulations:** REACH (SVHC) | RoHS | ELV Directive | SCIP Database | GADSL | Recommendation 025 (Recyclates) | Conflict Minerals (CMRT)
-- **Data & Tools:** Microsoft Excel (Advanced — XLOOKUP, Power Query, VBA macros) | PDMLink PLM | SAP | PTC Creo 7 | Zoho Suite | Python (data automation)
+- **Data & Tools:** Microsoft Excel (Advanced - XLOOKUP, Power Query, VBA macros) | PDMLink PLM | SAP | PTC Creo 7 | Zoho Suite | Python (data automation)
 - **Process:** Supplier declaration management | Compliance report generation | Rejection troubleshooting | Customer OEM compliance specifications | Cross-functional stakeholder coordination
 - **Soft Skills:** Client-facing consulting | Technical training delivery | Remote collaboration | Analytical problem-solving | Documentation accuracy
 
@@ -24,67 +24,62 @@ Dedicated IMDS & Materials Compliance Specialist with 5+ years of hands-on exper
 
 ## Professional Experience
 
-### IMDS & Materials Compliance Specialist
-**REACH Talent Consulting** | Malta (Remote) | January 2021 – Present
+### IMDS Engineer
+**Methode Electronics** | Cospicua, Malta | August 2022 - Present
 
-Leading end-to-end IMDS compliance operations for multiple automotive clients, managing material data accuracy across complex multi-tier supply chains:
+*Joined as IMDS Coordinator and Design Assistant (Aug 2022 - Jul 2023); promoted to IMDS Engineer (Aug 2023 - Present)*
 
-- Manage and submit material data declarations in IMDS for full Bills of Materials (BOM), ensuring compliance with ELV, REACH, RoHS, and SCIP requirements across 100+ active part numbers
-- Perform Where Used Analysis in IMDS to assess downstream regulatory impact of substance changes and material updates across customer product lines
-- Validate incoming supplier MDS submissions for accuracy, completeness, and regulatory threshold compliance (GADSL, Annex II/XIV/XVII); resolve rejections with targeted supplier guidance
-- Utilise IMDS A2 Optimizer to streamline batch submission workflows, reducing manual entry time and certification turnaround by 25%
-- Extract and analyse BOM data from PDMLink PLM databases to cross-reference part numbers and support IMDS certification workflows
-- Coordinate with customer engineering teams at 8 major OEM clients (Ferrari, VW Group, PACCAR) to address IMDS certification rejections and compliance escalations
-- Maintain IMDS database integrity — regularly auditing material declarations for accuracy, version control, and regulatory compliance
-- Generate monthly KPI reports for management tracking compliance metrics, SVHC substance status, and open action items
-- Support supplier onboarding by conducting IMDS training sessions, explaining submission requirements, GADSL substance thresholds, and Recommendation 025 recyclate obligations
-- Develop and maintain internal compliance tracking tools using Excel (Power Query, VBA) and Python for automated data extraction and reporting
-- Stay current with IMDS system updates (Release 14), ECHA SVHC candidate list updates, and evolving ELV/SCIP obligations — proactively communicating impact to clients
+- Manage end-to-end IMDS submissions for automotive components across multiple customer OEMs
+- Perform Where Used Analysis to track material data across BOMs and product lines
+- Coordinate with Tier 1 and Tier 2 suppliers to collect and validate material declarations (REACH, RoHS, ELV, SCIP, GADSL)
+- Validate and troubleshoot IMDS rejections; liaise directly with customer IMDS teams
+- Maintain compliance documentation and generate regulatory reports for customer audits
+- Provide internal training to engineering and supply chain teams on IMDS processes
+- Support design team with component design tasks and technical drawings (PTC Creo 7) during dual role phase
 
-### Mechanical Design Engineer (Junior)
-**Previous Role** | 2019 – 2020
+### Independent IMDS Consultant
+**Confidential Tier 1 Automotive Supplier** | Malta | 2024 - Present
 
-- Prepared technical drawings and 3D models using PTC Creo 7 and SolidWorks
-- Coordinated electrical and mechanical drawings for production line installations
-- Supported BOM creation and component documentation for engineering projects
+- Provide independent IMDS consulting on a retained basis to a Tier 1 automotive supplier in Malta (NDA in place)
+- Manage IMDS data submissions, Where Used Analysis, and supplier follow-ups for a client with complex multi-OEM supply chains
+- Advise on REACH/RoHS/SCIP compliance workflows and supplier declaration process improvements
+
+### Project Engineering Trainee
+**BT Commercial - RefPro Refrigeration** | Birkirkara, Malta | July 2020 - January 2021
+
+- Coordinated HVAC project activities including technical drawings and Bills of Materials
+- Designed and programmed plastic injection moulds for new product launches
+- Performed CAD/CAM programming and CNC machining (SAMAG TFZ 2)
+- Managed concurrent mould projects balancing technical problem-solving with resource allocation
 
 ---
 
 ## Education
 
-### Bachelor of Science — Mechanical Engineering
-**Vytautas Magnus University (VDU)** | Kaunas, Lithuania | August 2014 – June 2019
-
-Relevant modules: Materials Science, Environmental Engineering, Quality Systems, CAD/CAM, Manufacturing Processes
-_Degree anabin-verified as equivalent to EU Bachelor (4 years)_
+**Bachelor of Engineering (Hons) in Mechanical Engineering**
+University of Malta | 2016 - 2020
 
 ---
 
 ## Certifications
 
-- **IMDS Advanced Certification** — Official Exclusive Training
-  IMDS Basics (Course 6120) | IMDS Advanced (Course 6121) | IMDS Release 14 (Course 6125)
-  _IMDS Professional (official DXC Technology partner)_ | February 2023
-
-- **Exclusive Material Compliance Training**
-  _Methode Electronics_ | September 2024
-  Focus: REACH SVHC, RoHS substance thresholds, automotive material declaration best practices
-
-- **Compliance Management System Certification**
-  _MSME Technology Development Centre, Ministry of MSME, Government of India_ | October 2024
+- **IMDS Basics 6120** - IMDS Professional (official DXC Technology partner)
+- **IMDS Advanced 6121** - IMDS Professional (official DXC Technology partner)
+- **IMDS Release 14 6125** - IMDS Professional (official DXC Technology partner)
 
 ---
 
 ## Languages
 
-- **English** — Fluent (professional working proficiency)
-- **Tamil / Hindi** — Native
+- English: Fluent (professional)
+- Tamil: Native
+- Hindi: Conversational
 
 ---
 
-## Additional Information
+## Remote Work Setup
 
-- EU work permit holder, resident in Malta — fully eligible to work for EU-based companies remotely
+- EU work permit holder, resident in Malta - fully eligible to work for EU-based companies remotely
 - Available for B2B or employment engagement
 - Fully remote work setup with stable connectivity and professional home office
 - Open to international client collaboration and occasional supplier / client visits
