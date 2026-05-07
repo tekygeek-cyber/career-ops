@@ -21,7 +21,7 @@ Over my career I have coordinated with 8 major OEM clients — including Ferrari
 
 What makes Substance Analyst particularly compelling to me is your position as the European market leader for IMDS and CDX services, and your specialisation in exactly the domain where I have built my entire career. I am not looking to transition into this field — I am already in it. I want to grow with a team that takes IMDS compliance as seriously as I do, and delivers it at the highest level.
 
-I am fully available for remote work, fluent in English, hold an EU work permit, and am available from September 2026 (3-month notice period).
+I am fully available for remote work, fluent in English, hold an EU work permit, and am available from September 2026 (2 weeks notice).
 
 Please find my CV attached. I consent to the processing of my personal data by Substance Analyst Zenon Hibner, headquartered in Częstochowa, Wielkopolska 10, for the purpose of participating in the recruitment process.
 

@@ -88,4 +88,4 @@ _Degree anabin-verified as equivalent to EU Bachelor (4 years)_
 - Available for B2B or employment engagement
 - Fully remote work setup with stable connectivity and professional home office
 - Open to international client collaboration and occasional supplier / client visits
-- Available from September 2026 (notice period: 3 months)
+- Available from September 2026 (notice period: 2 weeks)
