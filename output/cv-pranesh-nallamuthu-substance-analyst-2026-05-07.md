@@ -25,7 +25,7 @@ IMDS Engineer and Materials Compliance Specialist with 3+ years of hands-on expe
 ## Professional Experience
 
 ### IMDS Engineer
-**Methode Electronics** | Cospicua, Malta | August 2022 - Present
+**Methode Electronics** | Birkirkara, Malta | August 2022 - Present
 
 *Joined as IMDS Coordinator and Design Assistant (Aug 2022 - Jul 2023); promoted to IMDS Engineer (Aug 2023 - Present)*
 
