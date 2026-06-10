@@ -5,21 +5,21 @@ Two usage modes: **conductor --chrome** (navigates portals in real time) or **st
 ## Architecture
 
 ```text
-Claude Conductor (claude --chrome --dangerously-skip-permissions)
+Conductor (headed browser mode)
   │
   │  Chrome: navigates portals (logged-in sessions)
   │  Reads DOM directly — the user sees everything in real time
   │
   ├─ Job 1: reads JD from DOM + URL
-  │    └─► claude -p worker → report .md + PDF + tracker-line
+  │    └─► headless worker → report .md + PDF + tracker-line
   │
   ├─ Job 2: click next, read JD + URL
-  │    └─► claude -p worker → report .md + PDF + tracker-line
+  │    └─► headless worker → report .md + PDF + tracker-line
   │
   └─ End: merge tracker-additions → applications.md + summary
 ```
 
-Each worker is a child `claude -p` with a clean 200K token context. The conductor only orchestrates.
+Each worker is a headless child process with a clean 200K token context. The conductor only orchestrates. See the **Headless / Batch Mode** table in `AGENTS.md` for the correct command per CLI.
 
 ## Files
 
@@ -45,9 +45,8 @@ batch/
    d. Execute via Bash:
 
       ```bash
-      claude -p --dangerously-skip-permissions \
-        --append-system-prompt-file batch/batch-prompt.md \
-        "Process this job. URL: {url}. JD: /tmp/batch-jd-{id}.txt. Report: {num}. ID: {id}"
+      # Use your CLI's headless command (see AGENTS.md — Headless / Batch Mode)
+      <headless-cmd> "Process this job. URL: {url}. JD: /tmp/batch-jd-{id}.txt. Report: {num}. ID: {id}"
       ```
 
    e. Update `batch-state.tsv` (completed/failed + score + report_num)
@@ -68,6 +67,7 @@ Options:
 - `--start-from N` — start from ID N
 - `--parallel N` — N workers in parallel
 - `--max-retries N` — attempts per job (default: 2)
+- `--rate-limit-sleep N` — seconds to wait before retrying a rate-limited worker (default: 300; use 0 to fail immediately)
 
 ## batch-state.tsv Format
 
@@ -76,7 +76,10 @@ id	url	status	started_at	completed_at	report_num	score	error	retries
 1	https://...	completed	2026-...	2026-...	002	4.2	-	0
 2	https://...	failed	2026-...	2026-...	-	-	Error msg	1
 3	https://...	pending	-	-	-	-	-	0
+4	https://...	rate_limited	2026-...	2026-...	004	-	rate-limit; retrying after 300s	1
 ```
+
+Valid statuses include `pending`, `processing`, `completed`, `failed`, `skipped`, and `rate_limited`. `rate_limited` is an intermediate non-completed state emitted while the runner waits before retrying; if the run is interrupted there, a later non-`--retry-failed` run treats it as pending work.
 
 ## Resumability
 
@@ -84,9 +87,9 @@ id	url	status	started_at	completed_at	report_num	score	error	retries
 - Lock file (`batch-runner.pid`) prevents double execution
 - Each worker is independent: failure in job #47 does not affect the others
 
-## Workers (claude -p)
+## Workers (headless mode)
 
-Each worker receives `batch-prompt.md` as a system prompt. It is self-contained.
+Each worker receives `batch-prompt.md` as a system prompt. It is self-contained. Use your CLI's headless command — see the **Headless / Batch Mode** table in `AGENTS.md`.
 
 The worker produces:
 1. `.md` report in `reports/`

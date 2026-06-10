@@ -67,7 +67,7 @@ AI-powered job search automation built on Claude Code: pipeline tracking, offer 
 | `scan.mjs` | Zero-token portal scanner — hits Greenhouse/Ashby/Lever APIs directly, zero LLM cost |
 | `check-liveness.mjs` | Job posting liveness checker |
 | `liveness-core.mjs` | Shared liveness logic (expired signals win over generic Apply text) |
-| `reports/` | Evaluation reports (format: `{###}-{company-slug}-{YYYY-MM-DD}.md`). Blocks A-F + G (Posting Legitimacy). Header includes `**Legitimacy:** {tier}`. |
+| `reports/` | Evaluation reports (format: `{###}-{company-slug}-{YYYY-MM-DD}.md`). Blocks A-F + G (Posting Legitimacy), plus `## Machine Summary` YAML for downstream scripts. Header includes `**Legitimacy:** {tier}`. |
 
 ### OpenCode Commands
 
@@ -332,10 +332,12 @@ Write one TSV file per evaluation to `batch/tracker-additions/{num}-{company-slu
 5. `status` -- canonical status (e.g., `Evaluated`)
 6. `score` -- format `X.X/5` (e.g., `4.2/5`)
 7. `pdf` -- `✅` or `❌`
-8. `report` -- markdown link `[num](reports/...)`
+8. `report` -- markdown link, always written **root-relative**: `[num](reports/...)`
 9. `notes` -- one-line summary
 
 **Note:** In applications.md, score comes BEFORE status. The merge script handles this column swap automatically.
+
+**Report link normalization:** The TSV always carries a **root-relative** `[num](reports/...)` link. `merge-tracker.mjs` rewrites it so the link is relative to the tracker file's own directory before writing it into the tracker — `../reports/...` when the tracker is at `data/applications.md`, or `reports/...` at the root layout. This keeps links clickable from the tracker (markdown links resolve relative to the file that contains them). Normalization is idempotent. To fix links in an existing tracker, run `node merge-tracker.mjs --migrate` (see #760).
 
 ### Pipeline Integrity
 
@@ -366,3 +368,5 @@ Write one TSV file per evaluation to `batch/tracker-additions/{num}-{company-slu
 - No markdown bold (`**`) in status field
 - No dates in status field (use the date column)
 - No extra text (use the notes column)
+@AGENTS.md
+<!-- Add anything Claude Code specific that other agents don't need -->
