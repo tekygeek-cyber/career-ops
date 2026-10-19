@@ -6,11 +6,16 @@
   "scripts": {
     "build": "node build.mjs",
     "test": "node --test test/*.test.mjs",
-    "check": "node --check public/app.js && node --check netlify/functions/api.mjs && node --check netlify/functions/auth.mjs"
+    "check": "node --check public/app.js && node --check netlify/functions/api.mjs && node --check netlify/functions/auth.mjs && node --check local/server.mjs && node --check local/bridge.mjs && node --check local/plugin-template.mjs",
+    "local:install": "node local/install.mjs",
+    "local": "npm run build && node local/server.mjs",
+    "test:integration": "node --test test/engine-integration.mjs"
   },
   "dependencies": {
     "@netlify/blobs": "^10.0.0",
+    "dotenv": "^16.6.1",
     "fflate": "^0.8.3",
+    "js-yaml": "^4.3.2",
     "pdf-lib": "^1.17.1",
     "pdfjs-dist": "^6.2.108"
   },
@@ -18,6 +23,6 @@
     "esbuild": "^0.25.0"
   },
   "engines": {
-    "node": ">=22"
+    "node": ">=22.13.0"
   }
 }

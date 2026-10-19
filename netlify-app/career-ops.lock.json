@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/career-ops-hq/career-ops.git",
+  "commit": "0b35a138fffa5335340070c2d13e0c8d1b804a2b",
+  "version": "1.37.0",
+  "checkedAt": "2026-10-19",
+  "releaseTag": "career-ops-v1.37.0",
+  "releaseTarget": "373aba45c4c46f7fea933ecfa36a98d848812378",
+  "interface": "plugins/_engine.mjs runHook notify, apiVersion 1"
+}
