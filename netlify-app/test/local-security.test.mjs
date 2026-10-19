@@ -119,7 +119,7 @@ test("local API rejects DNS rebinding, cross-origin requests, missing capability
   for (const change of [
     { cookie: "" },
     { host: "evil.example:4318" },
-    { origin: "https://careeropscenter.netlify.app" },
+    { origin: "https://hosted.example.netlify.app" },
     { "x-local-token": undefined },
     { "content-type": "application/x-www-form-urlencoded" },
     { "sec-fetch-site": "cross-site" },
