@@ -116,6 +116,15 @@ Never use production credentials in an untrusted preview.
 
 ## Verification status
 
-Syntax checks, ten security/data tests and the bundled production build were
+Syntax checks, eleven security/data tests and the bundled production build were
 run during implementation. Live OAuth, Blobs, AI and Gmail sends require the
 owner's deployment configuration and were not run with real credentials.
+
+### Netlify AI Gateway compatibility
+
+The adapter honours Netlify-injected OPENAI_API_KEY and OPENAI_BASE_URL together,
+so a gateway credential is sent to its matching gateway endpoint. Set OPENAI_MODEL
+to a compatible model available to your site. Alternatively set your own provider
+key; OPENAI_BASE_URL can select its HTTPS API root. Gateway availability and token
+usage depend on your Netlify account and credits. No live AI request has been
+made or billed during these checks.
