@@ -1,6 +1,9 @@
 node_modules/
 dist/
-.netlify/
+.local-runtime/
 .env
 .env.*
 !.env.example
+config/plugins.yml
+plugins.local/
+plugins.lock
