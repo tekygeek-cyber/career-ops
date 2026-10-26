@@ -2,6 +2,40 @@
 
 This guide is for setting up the Career Ops workspace in a clean, production-ready way, including local development and Netlify deployment for the static frontend and database-backed API.
 
+## Quick Start for Non-Developers
+
+If you want to use the app without deep technical setup, you do not need to understand the database, Netlify configuration, or the codebase.
+
+### Easiest path
+
+1. Install Node.js 18 or newer from https://nodejs.org
+2. Open a terminal in the project folder
+3. Run:
+
+```bash
+npm install
+npx netlify dev
+```
+
+4. Open the local URL shown in the terminal (typically something like `http://localhost:8888`)
+5. Use the app in the browser to track applications, follow-ups, and statuses
+
+### What is required?
+
+- a browser
+- Node.js installed on your machine
+- the project files checked out locally
+
+### What you can ignore
+
+If you are not doing deployment work or troubleshooting infrastructure, you can skip the advanced sections and just focus on:
+
+- installing dependencies
+- starting the local app
+- using the web interface
+
+This is the simplest path for a person who wants the tool working, not a developer setting up production infrastructure.
+
 ## Prerequisites
 
 Before you begin, make sure you have:
